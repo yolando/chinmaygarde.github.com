@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Buzzy And Me</title>
+ <link href="http://blog.buzzyand.me/atom.xml" rel="self"/>
+ <link href="http://blog.buzzyand.me/"/>
+ <updated>2010-07-29T22:47:26+05:30</updated>
+ <id>http://blog.buzzyand.me/</id>
+ <author>
+   <name>Chinmay Garde</name>
+   <email>chinmaygarde@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Vote For My Titanium Mobile Application</title>
+   <link href="http://blog.buzzyand.me/2009/09/23/vote_for_my_titanium_mobile_application.html"/>
+   <updated>2009-09-23T00:00:00+05:30</updated>
+   <id>http://blog.buzzyand.me/2009/09/23/vote_for_my_titanium_mobile_application</id>
+   <content type="html">&lt;p&gt;My application &amp;#8220;You Are Here&amp;#8221;, built using the Appcelerator Titanium Mobile framework has been selected as one of the three finalists of the Titanium Mobile Developer Contest.&lt;/p&gt;
+&lt;p&gt;The application uses the Geolocation API&amp;#8217;s of the iPhone and Android platforms to post updates to the Brightkite network and search for Tweets by location. You can view a &lt;a href=&quot;http://www.vimeo.com/6184856&quot;&gt;screencast&lt;/a&gt; of the application in action on both the iPhone and Android platforms &lt;span style=&quot;text-decoration: line-through;&quot;&gt;and &lt;a href=&quot;http://www.appcelerant.com/titanium-mobile-developer-contest-finalists.html&quot;&gt;vote&lt;/a&gt; for it.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; I won the &lt;a href=&quot;http://www.appcelerant.com/titanium-mobile-developer-contest-results.html&quot;&gt;second prize&lt;/a&gt; in the Appcelerator Titanium Mobile Developer contest. Thanks to everyone who voted for me. You guys are awesome!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 2:&lt;/strong&gt; The app is now live on the App Store. Get it &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=329502169&amp;amp;amp;mt=8&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Buzzy&lt;/strong&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Podcast With My Views On JavaFX</title>
+   <link href="http://blog.buzzyand.me/2009/08/20/podcast_with_my_views_on_javafx.html"/>
+   <updated>2009-08-20T00:00:00+05:30</updated>
+   <id>http://blog.buzzyand.me/2009/08/20/podcast_with_my_views_on_javafx</id>
+   <content type="html">&lt;p&gt;I had a pleasant chat with Maijaliisa Burkert of Sun Microsystems yesterday about my experience with developing Rich Internet Applications using JavaFX.&lt;/p&gt;
+&lt;p&gt;Among other things, we talked about my winning application at the Code JavaFX India contest, improvements in JavaFX 1.2, the new JavaFX Authoring tool and the exciting possibilities offered by JavaFX Mobile.&lt;/p&gt;
+&lt;p&gt;Catch the full details at &lt;a href=&quot;http://blogs.sun.com/students/entry/interview_with_student_javafx_developer&quot;&gt;Student Views &amp;amp; Reviews&lt;/a&gt; blog or listen to the podcast using the player embedded below.&lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;visibility: hidden; width: 0px; height: 0px;&quot; src=&quot;http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/bT*xJmx*PTEyNTA3NTU1MTE*NzUmcHQ9MTI1MDc1NTUxNzE1OCZwPTQ1MDk3MiZkPSZnPTImbz1iMjgwYzRhNTFjMmY*NTYyYTdhMDBjYzhlYzZkOGZmOSZvZj*w.gif&quot; border=&quot;0&quot; alt=&quot;&quot; width=&quot;0&quot; height=&quot;0&quot; /&gt;&lt;object classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; width=&quot;210&quot; height=&quot;108&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot;&gt;&lt;param name=&quot;src&quot; value=&quot;http://www.blogtalkradio.com/BTRPlayer.swf?file=http%3A%2F%2Fwww%2Eblogtalkradio%2Ecom%2Fplaylist%2Easpx%3Fshow%5Fid%3D657770&amp;amp;autostart=false&amp;amp;bufferlength=5&amp;amp;volume=100&amp;amp;borderweight=1&amp;amp;bordercolor=#999999&amp;amp;backgroundcolor=#FFFFFF&amp;amp;dashboardcolor=#0098CB&amp;amp;textcolor=#FFFFFF&amp;amp;detailscolor=#FFFFFF&amp;amp;playlistcolor=#999999&amp;amp;playlisthovercolor=0x333333&amp;amp;cornerradius=10&amp;amp;callback=http://www.blogtalkradio.com/FlashPlayerCallback.aspx?referrer_url=/show.aspx&quot; /&gt;&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; /&gt;&lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; width=&quot;210&quot; height=&quot;108&quot; src=&quot;http://www.blogtalkradio.com/BTRPlayer.swf?file=http%3A%2F%2Fwww%2Eblogtalkradio%2Ecom%2Fplaylist%2Easpx%3Fshow%5Fid%3D657770&amp;amp;autostart=false&amp;amp;bufferlength=5&amp;amp;volume=100&amp;amp;borderweight=1&amp;amp;bordercolor=#999999&amp;amp;backgroundcolor=#FFFFFF&amp;amp;dashboardcolor=#0098CB&amp;amp;textcolor=#FFFFFF&amp;amp;detailscolor=#FFFFFF&amp;amp;playlistcolor=#999999&amp;amp;playlisthovercolor=0x333333&amp;amp;cornerradius=10&amp;amp;callback=http://www.blogtalkradio.com/FlashPlayerCallback.aspx?referrer_url=/show.aspx&quot; quality=&quot;high&quot; wmode=&quot;transparent&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Buzzy&lt;/strong&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Build a Silverlight-Flex Chat Application Using LiveCycle Data Services</title>
+   <link href="http://blog.buzzyand.me/2008/10/17/build_a_silverlight_flex_chat_application_using_livecycle_data_services.html"/>
+   <updated>2008-10-17T00:00:00+05:30</updated>
+   <id>http://blog.buzzyand.me/2008/10/17/build_a_silverlight_flex_chat_application_using_livecycle_data_services</id>
+   <content type="html">&lt;p&gt;With the recent release of Silverlight 2 RC1 and Flash Player 10, things in the &lt;span class=&quot;caps&quot;&gt;RIA&lt;/span&gt; world have never looked more interesting. I was going over the forums on Silverlight.net and realised that some of the criticism directed towards Silverlight was regarding the lack of support for a binary protocol similar to &lt;span class=&quot;caps&quot;&gt;AMF&lt;/span&gt;, which is supported by the Flash Player. Data transfer using &lt;span class=&quot;caps&quot;&gt;AMF&lt;/span&gt; is definitely faster than the more verbose &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I am sure that better ways of data transfer with Silverlight will emerge soon, but currently, our options are limited. I tried a few examples using sockets but it seemed like too much work, especially when you are used to &lt;span class=&quot;caps&quot;&gt;RPC&lt;/span&gt; using the RemoteObject tag in Flex :-)&lt;/p&gt;
+&lt;p&gt;There is a workaround (more of a hack) to this problem. We could use the &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt; integration of the Silverlight runtime and Flash Player to pass messages between the two. The Flash application will have no UI elements (in fact, it can be hidden). It only receives the messages and passes the data to the &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt;, which is then sent to the Silverlight application. The JavaScript required for this purpose is not too complicated. This is not an elegant solution but it will have to do for now.&lt;/p&gt;
+&lt;p&gt;Though I initially started exploring this approach only to call ColdFusion CFC’s from a Silverlight application without resorting to &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt; Web Services, I quickly realised that the same approach could be used to build a simple Chat application using the Messaging features of &lt;span class=&quot;caps&quot;&gt;LCDS&lt;/span&gt;.&lt;br /&gt;
+So here is a quick tutorial on creating a Flex Silverlight Chat application using LiveCycle. I am using the version of LiveCycle that is integrated into the ColdFusion 8 server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1: Configuring LiveCycle Messaging Endpoints&lt;/strong&gt;&lt;br /&gt;
+The first step is to configure a “destination” in the messaging-config.xml file that resides in the &lt;span class=&quot;caps&quot;&gt;WEB&lt;/span&gt;-&lt;span class=&quot;caps&quot;&gt;INF&lt;/span&gt;/flex folder of your web root.&lt;/p&gt;
+&lt;p&gt;Give the destination an appropriate ID, and then specify the appropriate adapter. In the default installation of &lt;span class=&quot;caps&quot;&gt;LCDS&lt;/span&gt; on ColdFusion 8, the default adapter is “cfgateway”. We want to use the “actionscript” adapter, so it has to be explicitly mentioned.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;adapter&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ref=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;actionscript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;The second step is optional. Switch the “allow-subtopics” server property to true. This way, our chat application can listen to and send messages on multiple topics. For further information regarding the server properties and other security information, refer to the LiveCycle LiveDocs.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;properties&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;server&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;allow-subtopics&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/allow-subtopics&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/server&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/properties&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;The next step is to specify the channel over which we want to transfer data. The “java-rtmp” channel enables messages to be transferred in real time. However, it uses a non standard port for communication which may cause issues with Firewalls. So, as a backup, we specify another channel “java-polling-amf” which uses polling to check if data needs to be transferred. Be sure to check that these channel definitions are uncommented in the services-config.xml file. You can adjust the settings of these endpoints too, but the defaults should work fine for our purposes.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;destination&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;chat&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;adapter&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ref=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;actionscript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;properties&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;server&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;allow-subtopics&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/allow-subtopics&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/server&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/properties&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;channels&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;channel&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ref=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;java-rtmp&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;channel&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ref=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;java-polling-amf&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/channels&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/destination&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;And thats it, save both the services-config.xml and messaging-config.xml file and restart your server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2: Building the Flex Application&lt;/strong&gt;&lt;br /&gt;
+The next step is to build the Flex application that will actually handle the data transfer between the server and the &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt;. This application will have no UI elements. You can specify a really tiny size.&lt;br /&gt;
+Create a Flex ColdFusion 8 project that uses LiveCycle Data Services instead of Flash Remoting. Now instantiate the Producer and the Consumer objects in &lt;span class=&quot;caps&quot;&gt;MXML&lt;/span&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;mx:Producer&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;producer&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;destination=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;chat&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;subtopic=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;buzzy&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;mx:Consumer&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;consumer&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;destination=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;chat&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;subtopic=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;buzzy&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;message=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;gotMessage(event)&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;The destination property of these objects is the one specified in the messaging-config.xml. Since subtopics are allowed, specify a subtopic of your choice. This feature will come in handy when you are building a more full featured chat application.&lt;br /&gt;
+Add a “message” event handler to your consumer. This event handler will call an external JavaScript method, passing it the message that the consumer just received.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;gotMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;e:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MessageEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;):&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;external&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ExternalInterface&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;receiveMessage&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;On the “creationComplete” event of the Application, register a callback method. This ActionScript method will be called when the appropriate JavaScript method is called in the &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; page. This ActionScript method receives one argument with which it constructs an AsyncMessage and sends it using the Producer.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;e:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FlexEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;):&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;consumer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;external&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ExternalInterface&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addCallback&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sendMessage&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;str:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;):&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;message:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AsyncMessage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AsyncMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;producer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;The complete &lt;span class=&quot;caps&quot;&gt;MXML&lt;/span&gt; code is given below:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;mx:Application&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:mx=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.adobe.com/2006/mxml&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;creationComplete=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;init(event)&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;layout=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;absolute&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;5&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;mx:Script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;![&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CDATA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;mx.messaging.events.MessageFaultEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;mx.controls.Alert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;mx.messaging.events.MessageEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;mx.messaging.messages.AsyncMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;mx.events.FlexEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;e:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FlexEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;):&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;consumer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;external&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ExternalInterface&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addCallback&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sendMessage&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;str:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;):&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;message:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AsyncMessage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AsyncMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;producer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;gotMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;e:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MessageEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;):&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;external&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ExternalInterface&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;receiveMessage&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;		
+&lt;span class=&quot;o&quot;&gt;]]&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/mx:Script&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;mx:Producer&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;producer&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;destination=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;chat&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;subtopic=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;buzzy&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;mx:Consumer&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;consumer&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;destination=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;chat&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;subtopic=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;buzzy&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;message=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;gotMessage(event)&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/mx:Application&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Step 3: Building the Silverlight Application&lt;/strong&gt;&lt;br /&gt;
+We are finally done with the Flex application, moving on to the Silverlight application itself. All the UI elements of the application have to be created here. The details are really up to you, but the basic elements of the UI will be a TextBox which will act as a message area and another TextBox which will act as a message input area. I quickly drew the UI in Blend. This is what I ended up with:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;UserControl&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x:Class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;FlexSilverlightChat.Page&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;xmlns:x=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://schemas.microsoft.com/winfx/2006/xaml&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;Width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;800&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;600&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;Background=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#FF1E8AB6&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Foreground=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#FF1E8AB6&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;xmlns:d=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://schemas.microsoft.com/expression/blend/2008&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;xmlns:mc=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://schemas.openxmlformats.org/markup-compatibility/2006&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;mc:Ignorable=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;d&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;Grid&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x:Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;LayoutRoot&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Background=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#FF1372B0&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;Rectangle&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.294&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Margin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;8.412,0,121.941,7.882&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;VerticalAlignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bottom&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Fill=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#FFD8D8D8&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#FF000000&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;4&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;d:LayoutOverrides=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Height&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;d:IsLocked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;True&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Click=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Button_Click&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;HorizontalAlignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Right&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Margin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0,0,8.001,7.882&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;VerticalAlignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bottom&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;109.586&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Send&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;d:LayoutOverrides=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Width&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;Rectangle&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Margin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;8.001,7.882,8.001,66.94&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Fill=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#FFD8D8D8&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#FF000000&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;4&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Opacity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0.43&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;d:IsLocked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;True&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;TextBox&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Margin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;18.823,18.591,21.884,77.586&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;x:Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;messageArea&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Opacity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Background=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{x:Null}&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;TextWrapping=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Wrap&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;IsReadOnly=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;True&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;TextBox&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;34.649&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Margin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;18.969,0,135.295,17.114&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;x:Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;inputText&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;VerticalAlignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bottom&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Background=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{x:Null}&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;Text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;TextWrapping=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Wrap&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Grid&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/UserControl&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;The Send button is wired to an event handler which calls a JavaScript method called “sendMessage” which in turn calls the ActionScript method (also named “sendMessage”) that sends the message using the Producer. It is invoked as follows:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Button_Click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventArgs&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;HtmlPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Invoke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sendMessage&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;inputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;Invoking Javascript methods from C# is simple enough but the reverse is not as easy as registering a callback method, as in the case of ActionScript.&lt;/p&gt;
+&lt;p&gt;First, the “Page” class has to be marked as a “ScriptableType” and all the methods that have to be called from JavaScript must be marked as “ScriptableMember”&lt;/p&gt;
+&lt;p&gt;Then, register an event handler that responds to the “Loaded” event. The “Page” class which is marked as a “ScriptableType” must be registered as a Scriptable Object.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Page_Loaded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventArgs&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;HtmlPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RegisterScriptableObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Page&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;The complete C# code is given below:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Collections.Generic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Linq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Net&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Windows.Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Windows.Documents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Windows.Input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Windows.Media&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Windows.Media.Animation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Windows.Shapes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System.Windows.Browser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;FlexSilverlightChat&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;    [ScriptableType]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;partial&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Page&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UserControl&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;InitializeComponent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Loaded&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Page_Loaded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Page_Loaded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventArgs&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;HtmlPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RegisterScriptableObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Page&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Button_Click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventArgs&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;HtmlPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Invoke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sendMessage&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;inputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;        [ScriptableMember]&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;gotMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;messageArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Message: &amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;\n&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;messageArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;p&gt;We are now in the home stretch. Generate the release builds of the Flex application using Flex Builder and the Silverlight TestPage using Visual Studio. You will now have the Silverlight and Flex applications residing on two separate pages.&lt;/p&gt;
+&lt;p&gt;Copy the appropriate &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; code fragments from both pages onto a single &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; Page.&lt;br /&gt;
+Now it’s time to write the JavaScript that will wire the ActionScript methods in the Flex application with the C# methods in the Silverlight application.&lt;/p&gt;
+&lt;p&gt;Both methods are fairly trivial and self explanatory.&lt;/p&gt;
+&lt;p&gt;&lt;/notextile&gt;&lt;/p&gt;
+&lt;p&gt;And that’s it. Copy the assets to the appropriate folder under the web root and run it. You will see that the messages you type into the text input at the bottom appear in the message area above. In reality, the message is being transferred from the Silverlight client to the &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt; which in turn passes it to the Flex application whose Producer sends the message. As the Consumer in the Flex application receives the message, it sends it back to the &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt; from which it is passed to the Silverlight client.&lt;/p&gt;
+&lt;p&gt;Open the same application in a couple of other windows and see if the messages sent from one instance of the application are seen in the other.&lt;/p&gt;
+&lt;p&gt;Here is a quick video I made of the applications in action:&lt;br /&gt;
+&lt;object width=&quot;425&quot; height=&quot;344&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/j8G7sGiCUPc&amp;hl=en&amp;fs=1&amp;rel=0&amp;color1=0x3a3a3a&amp;color2=0x999999&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/j8G7sGiCUPc&amp;hl=en&amp;fs=1&amp;rel=0&amp;color1=0x3a3a3a&amp;color2=0x999999&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;344&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Buzzy&lt;/strong&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Porting Silverlight 2 Beta 1 Application to Beta 2</title>
+   <link href="http://blog.buzzyand.me/2008/09/14/porting_silverlight_2_beta1_applications_to_beta_2.html"/>
+   <updated>2008-09-14T00:00:00+05:30</updated>
+   <id>http://blog.buzzyand.me/2008/09/14/porting_silverlight_2_beta1_applications_to_beta_2</id>
+   <content type="html">&lt;p&gt;About 5 months ago, I made a Flex/&lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; application called Stockastica. It was a virtual stock trading simulation. Subsequently, I ported it to Silverlight 2 Beta 1. The first beta was just released and I was eager to see what I could do with it. It wasn&amp;#8217;t a very complicated app. Only basic web services were used. I made the app and forgot about it.&lt;/p&gt;
+&lt;p&gt;Today, I decided to port the app to beta 2. It is quite daunting when you start out. But like all things, you only need to find the right resources to help you get started. Probably the most helpful one was a post on &lt;a href=&quot;http://devarthur.blogspot.com/2008/06/moving-silverlight-2-beta-1.html&quot;&gt;/dev/arthur&lt;/a&gt;. It solved almost all my problems.&lt;/p&gt;
+&lt;p&gt;If you are hosting the app on IIS7, don&amp;#8217;t forget to add a .xap extension with a mime type of &lt;em&gt;application/x-silverlight&lt;/em&gt;. Porting apps that use sockets was a bit troublesome. A detailed description of the changes between beta 1 and 2 is available &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/cc645049(VS.95).aspx&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A screencast of the ported application&amp;#8230;&lt;/strong&gt;&lt;br /&gt;
+&lt;object width=&quot;400&quot; height=&quot;250&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;movie&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=1725331&amp;amp;server=vimeo.com&amp;amp;show_title=0&amp;amp;show_byline=0&amp;amp;show_portrait=0&amp;amp;color=ff9933&amp;amp;fullscreen=1&quot; /&gt;&lt;embed src=&quot;http://vimeo.com/moogaloop.swf?clip_id=1725331&amp;amp;server=vimeo.com&amp;amp;show_title=0&amp;amp;show_byline=0&amp;amp;show_portrait=0&amp;amp;color=ff9933&amp;amp;fullscreen=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; allowscriptaccess=&quot;always&quot; width=&quot;400&quot; height=&quot;250&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+&lt;p&gt;Regards,&lt;br /&gt;
+&lt;strong&gt;Buzzy&lt;/strong&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Flex Developer's Summit, India</title>
+   <link href="http://blog.buzzyand.me/2008/09/04/flex_developers_summit_india.html"/>
+   <updated>2008-09-04T00:00:00+05:30</updated>
+   <id>http://blog.buzzyand.me/2008/09/04/flex_developers_summit_india</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3281/2804533499_df7cf0d2ae_o.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.endtoend.in/ete2008/adobe/ria/micro/&quot;&gt;Adobe is organizing a developer&amp;#8217;s meet&lt;/a&gt; on September 10-11, 2008 in Bangalore, India. The &lt;em&gt;&lt;span class=&quot;caps&quot;&gt;RIA&lt;/span&gt; Developer Summit&lt;/em&gt; is focused on developers. Adobe &lt;span class=&quot;caps&quot;&gt;RIA&lt;/span&gt; Developer Summit offers a unique opportunity to designers and developers to gain insights into the design and development of RIAs.&lt;/p&gt;
+&lt;p&gt;The key features are:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Hear from eminent personalities like &lt;strong&gt;Ben Forta, Director-Evangelism,&lt;/strong&gt; and &lt;strong&gt;Michele Turner, VP-Platform,&lt;/strong&gt; on the impact of RIAs.&lt;/li&gt;
+	&lt;li&gt;Interact with the Flex team and learn how to get that &amp;#8220;killer look&amp;#8221; for your application that you always dreamed off.&lt;/li&gt;
+	&lt;li&gt;Learn how Adobe Flex dramatically accelerates your projects.&lt;/li&gt;
+	&lt;li&gt;What’s more, get Adobe Flex Builder 3 worth around Rs. 12000/- &lt;span class=&quot;caps&quot;&gt;FREE&lt;/span&gt;!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For young student developers, this is a terrific opportunity. So go ahead and register at Adobe India&amp;#8217;s Technical Evangelist&amp;#8217;s &lt;a href=&quot;http://raghunathrao.com/announcements/events/StudentRegistrations.html&quot;&gt;site&lt;/a&gt; . If you are a  faculty drop Raghu a mail at raghunath.rao at gmail dot com, and he just might personaly call and invite you!&lt;/p&gt;
+&lt;p&gt;You could also leave me a comment for any furthur information. Cya at the developer&amp;#8217;s meet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Neyawn &amp;amp; Buzzy&lt;/strong&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Porting Stockastica to AIR</title>
+   <link href="http://blog.buzzyand.me/2008/05/12/porting_stockastica_to_air.html"/>
+   <updated>2008-05-12T00:00:00+05:30</updated>
+   <id>http://blog.buzzyand.me/2008/05/12/porting_stockastica_to_air</id>
+   <content type="html">&lt;p&gt;Now that Stockastica is fully ready, I have been working on porting the Stockastica Flex application to &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Porting any Flex application to &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; involves changing the &amp;lt;Application&amp;gt; tags to &amp;lt;WindowedApplication&amp;gt; and adding an &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt; file. It is &lt;em&gt;painfully&lt;/em&gt; simple.  I did spend some time adding features that are specific to a desktop application.&lt;/p&gt;
+&lt;p&gt;We also spent some time modifying the &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; properties to give it a customized look( though I am pretty sure I managed to ruin even the &lt;em&gt;plain vanilla&lt;/em&gt; look ). It felt weird knowing that I was modifying the presentation layer of a desktop application using &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;. But it works flawlessly and I was really impressed, especially after I had gone through the harrowing experience of styling and skinning the Silverlight app. Using &lt;span class=&quot;caps&quot;&gt;XAML&lt;/span&gt; resources is not as intuitive as using &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://screencast.com/t/5iueWVKh&quot;&gt;Here&lt;/a&gt; is a screencast of Version 2.0 of the App I finally prepared after porting it to &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt;. I am sorry about the large resolution. Will post another one on a lower resolution soon. Hope you like what you see. Please leave your comments below. I would love to hear any suggestions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Buzzy&lt;/strong&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Stockastica Version 1.0</title>
+   <link href="http://blog.buzzyand.me/2008/05/01/stockastica_version_1.html"/>
+   <updated>2008-05-01T00:00:00+05:30</updated>
+   <id>http://blog.buzzyand.me/2008/05/01/stockastica_version_1</id>
+   <content type="html">&lt;p&gt;Things couldn&amp;#8217;t have gotten better.&lt;/p&gt;
+&lt;p&gt;Almost an year back, Buzzy had developed this App Stockastica, a virtual stock market game using Visual Studio, retrieving live data from Nasdaq.com. It retrieved the Quotes of 20 companies, and displayed them wherein, users could buy and sell stocks using virtual bounty. At the end of the day, the person with the biggest net assets won $50 real money from the organizers! The UI was simplistic, and minimalistic. But then thats what you can do when you are on a self motivated project with a deadline of 4 days, and you have no idea whether the idea is feasible.&lt;/p&gt;
+&lt;p&gt;That was then. Thanks to &lt;a href=&quot;http://raghuonflex.wordpress.com&quot;&gt;Raghu&lt;/a&gt;, Technical Evangelist, Adobe Systems, Bangalore, who came to our college and held a &lt;a href=&quot;http://techtatva07.wordpress.com/2007/09/02/adobe-flex-builder-workshop/&quot;&gt;2-day workshop on Flex&lt;/a&gt;, we got a bit into Flex. And then, we decided, we would go for developing the App in Flex this year. A few months later Flex 3 was released, and we got a free copy of Flex 3 for students, and started out building the App in Flex 3.&lt;/p&gt;
+&lt;p&gt;And here it is- &lt;a href=&quot;http://www.screencast.com/t/pTCBRrGH&quot;&gt;Version 1.0 of Stockastica&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[ The Screencast is made using Jing, which is a recent discovery, and which is awesome too!]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[ P.S. We &lt;span class=&quot;caps&quot;&gt;ARE&lt;/span&gt; still working to better the &lt;em&gt;Plain Vanilla look&lt;/em&gt;, getting more and more confused, every time we tweak it :( ]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Neyawn&lt;/strong&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Flex vs Silverlight, My Views</title>
+   <link href="http://blog.buzzyand.me/2008/04/28/flex_vs_silverlight_my_views.html"/>
+   <updated>2008-04-28T00:00:00+05:30</updated>
+   <id>http://blog.buzzyand.me/2008/04/28/flex_vs_silverlight_my_views</id>
+   <content type="html">&lt;p&gt;I have been developing on both Flex and Silverlight for some time, and now is as good a time as any to evaluate these two exciting technologies. My goal was to create two similar applications on both Flex and Silverlight. I decided to redo the Stockastica application. It is an online stock trading simulation. Last year it was done using &lt;span class=&quot;caps&quot;&gt;ASP&lt;/span&gt;.&lt;span class=&quot;caps&quot;&gt;NET&lt;/span&gt;. This year I decided to use the new &lt;span class=&quot;caps&quot;&gt;RIA&lt;/span&gt; technologies to dive into the world of Web 2.0.&lt;/p&gt;
+&lt;p&gt;A word of caution here. I might be slightly biased towards Flex because I have been developing on Flash for quite some time and I find it simply fantastic. Also, I used the Silverlight 2 Beta 1 to build the application. It is obvious that the final release of the product will address some of the issues described here.&lt;/p&gt;
+&lt;p&gt;I will put up screencasts showing both the applications in action soon.&lt;/p&gt;
+&lt;p&gt;So, let’s begin…&lt;/p&gt;
+&lt;table&gt;
+&lt;tr&gt;
+		&lt;th&gt;Flex&lt;/th&gt;
+		&lt;th&gt;Silverlight&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Almost everyone has Flash Player 9 installed on their systems. So there are no extra downloads required to view these apps.&lt;/td&gt;
+		&lt;td&gt;Installing the Silverlight 1.0 plugin was a hassle for me. Then the upgrade to the 2.0 version was not as seamless as I had expected. Almost no one has the Silverlight plugin (But Microsoft has Windows update on their side, one ‘Critical Update’ and the problem is solved  ).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Flex has a rich control library ready for use.&lt;/td&gt;
+		&lt;td&gt;Even in Beta 1, many controls are missing. Though I expect this problem to be solved by the final release of the product.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Supports all image formats.&lt;/td&gt;
+		&lt;td&gt;Does not support the &lt;span class=&quot;caps&quot;&gt;GIF&lt;/span&gt; format. Why? Wasted half an hour on this problem before I realized this.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Even though AS3 is 10 times faster than AS2 (Ask someone who has worked with particle systems), it still cannot compare with the power of C#. Also, can only program in AS3.&lt;/td&gt;
+		&lt;td&gt;Very powerful and easy to use. You can use JavaScript, VB.&lt;span class=&quot;caps&quot;&gt;NET&lt;/span&gt; and C#.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Linux support&lt;/td&gt;
+		&lt;td&gt;No Linux support. That’s just wrong.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Databinding is a snap with the [Bindable] tag&lt;/td&gt;
+		&lt;td&gt;Not as straightforward, but can be done anyway. Also, more powerful(in my opinion).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Data transfer via the proprietary &lt;span class=&quot;caps&quot;&gt;AMF&lt;/span&gt; using WebORB, Fluorine, etc is faster than traditional web services.&lt;/td&gt;
+		&lt;td&gt;No such format for data transfer. Will have to stick to &lt;span class=&quot;caps&quot;&gt;SOAP&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;REST&lt;/span&gt; web services(for now).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;BlazeDS, the real time data push and remoting platform is open source. Very exciting.&lt;/td&gt;
+		&lt;td&gt;!! Did not find much information about this.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Styling is simplified by using &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; to style your components. Implementation is not complete though. Stuff like background-repeat is a glaring omission.&lt;/td&gt;
+		&lt;td&gt;Have to use &lt;span class=&quot;caps&quot;&gt;XAML&lt;/span&gt; resources. Found this unfamiliar.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Debugging is a bit of a hassle.&lt;/td&gt;
+		&lt;td&gt;Debugging using Visual Studio is very easy.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Accessing web services requires manual creation of ActionScript proxy classes. You can automate this by using FlexTense though.	&lt;/td&gt;
+		&lt;td&gt;Accessing web services is very easy. Just add a reference to the WebService in Visual Studio and lookup reference.cs for the good stuff &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Size of the compiled &lt;span class=&quot;caps&quot;&gt;SWF&lt;/span&gt; file is smaller than that of the uncompressed Silverlight component.&lt;/td&gt;
+		&lt;td&gt;Size of the Silverlight component is larger.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;!!&lt;/td&gt;
+		&lt;td&gt;Get 10 GB of hosting space free with Silverlight streaming. Deliver rich media. Awesome.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Animation is time based.&lt;/td&gt;
+		&lt;td&gt;Animation is frame based. Can’t say which one is better.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Cannot be search engine optimized. Bots can’t read the contents of the &lt;span class=&quot;caps&quot;&gt;SWF&lt;/span&gt; file.&lt;/td&gt;
+		&lt;td&gt;I am confused about this after the introduction of the .&lt;span class=&quot;caps&quot;&gt;XAP&lt;/span&gt; file.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Deploying the final application is a snap because there is only one &lt;span class=&quot;caps&quot;&gt;SWF&lt;/span&gt; file.&lt;/td&gt;
+		&lt;td&gt;Lots of individual files to be deployed.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+		&lt;td&gt;Got my copy of Flex Builder 3 Pro for free. If you are a student or faculty member of an educational institution, you can too.&lt;/td&gt;
+		&lt;td&gt;Express editions of Visual Studio are available for free.		&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;Until next time&amp;#8230;&lt;br /&gt;
+&lt;strong&gt;Buzzy&lt;/strong&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>

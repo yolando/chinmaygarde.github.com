@@ -1,0 +1,15 @@
+---
+layout: post
+title: Porting Stockastica to AIR
+postdate: 12 May, 2008
+---
+
+Now that Stockastica is fully ready, I have been working on porting the Stockastica Flex application to AIR.
+
+Porting any Flex application to AIR involves changing the &lt;Application&gt; tags to &lt;WindowedApplication&gt; and adding an XML file. It is <em>painfully</em> simple.  I did spend some time adding features that are specific to a desktop application.
+
+We also spent some time modifying the CSS properties to give it a customized look( though I am pretty sure I managed to ruin even the <em>plain vanilla</em> look ). It felt weird knowing that I was modifying the presentation layer of a desktop application using CSS. But it works flawlessly and I was really impressed, especially after I had gone through the harrowing experience of styling and skinning the Silverlight app. Using XAML resources is not as intuitive as using CSS.
+
+"Here":http://screencast.com/t/5iueWVKh is a screencast of Version 2.0 of the App I finally prepared after porting it to AIR. I am sorry about the large resolution. Will post another one on a lower resolution soon. Hope you like what you see. Please leave your comments below. I would love to hear any suggestions.
+
+*Buzzy*

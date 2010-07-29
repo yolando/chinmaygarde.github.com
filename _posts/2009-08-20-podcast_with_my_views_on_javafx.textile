@@ -1,0 +1,15 @@
+---
+layout: post
+title: Podcast With My Views On JavaFX
+postdate: 10 August, 2009
+---
+
+I had a pleasant chat with Maijaliisa Burkert of Sun Microsystems yesterday about my experience with developing Rich Internet Applications using JavaFX.
+
+Among other things, we talked about my winning application at the Code JavaFX India contest, improvements in JavaFX 1.2, the new JavaFX Authoring tool and the exciting possibilities offered by JavaFX Mobile.
+
+Catch the full details at "Student Views & Reviews":http://blogs.sun.com/students/entry/interview_with_student_javafx_developer blog or listen to the podcast using the player embedded below.
+
+<img style="visibility: hidden; width: 0px; height: 0px;" src="http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/bT*xJmx*PTEyNTA3NTU1MTE*NzUmcHQ9MTI1MDc1NTUxNzE1OCZwPTQ1MDk3MiZkPSZnPTImbz1iMjgwYzRhNTFjMmY*NTYyYTdhMDBjYzhlYzZkOGZmOSZvZj*w.gif" border="0" alt="" width="0" height="0" /><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="210" height="108" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://www.blogtalkradio.com/BTRPlayer.swf?file=http%3A%2F%2Fwww%2Eblogtalkradio%2Ecom%2Fplaylist%2Easpx%3Fshow%5Fid%3D657770&amp;autostart=false&amp;bufferlength=5&amp;volume=100&amp;borderweight=1&amp;bordercolor=#999999&amp;backgroundcolor=#FFFFFF&amp;dashboardcolor=#0098CB&amp;textcolor=#FFFFFF&amp;detailscolor=#FFFFFF&amp;playlistcolor=#999999&amp;playlisthovercolor=0x333333&amp;cornerradius=10&amp;callback=http://www.blogtalkradio.com/FlashPlayerCallback.aspx?referrer_url=/show.aspx" /><param name="wmode" value="transparent" /><param name="quality" value="high" /><embed type="application/x-shockwave-flash" width="210" height="108" src="http://www.blogtalkradio.com/BTRPlayer.swf?file=http%3A%2F%2Fwww%2Eblogtalkradio%2Ecom%2Fplaylist%2Easpx%3Fshow%5Fid%3D657770&amp;autostart=false&amp;bufferlength=5&amp;volume=100&amp;borderweight=1&amp;bordercolor=#999999&amp;backgroundcolor=#FFFFFF&amp;dashboardcolor=#0098CB&amp;textcolor=#FFFFFF&amp;detailscolor=#FFFFFF&amp;playlistcolor=#999999&amp;playlisthovercolor=0x333333&amp;cornerradius=10&amp;callback=http://www.blogtalkradio.com/FlashPlayerCallback.aspx?referrer_url=/show.aspx" quality="high" wmode="transparent"></embed></object>
+
+*Buzzy*

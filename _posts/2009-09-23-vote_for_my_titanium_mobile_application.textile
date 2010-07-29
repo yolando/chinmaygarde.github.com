@@ -1,0 +1,15 @@
+---
+layout: post
+title: Vote For My Titanium Mobile Application
+postdate: 23 September, 2009
+---
+
+My application "You Are Here", built using the Appcelerator Titanium Mobile framework has been selected as one of the three finalists of the Titanium Mobile Developer Contest.
+
+The application uses the Geolocation API's of the iPhone and Android platforms to post updates to the Brightkite network and search for Tweets by location. You can view a "screencast":http://www.vimeo.com/6184856 of the application in action on both the iPhone and Android platforms <span style="text-decoration: line-through;">and "vote":http://www.appcelerant.com/titanium-mobile-developer-contest-finalists.html for it.</span>
+
+*Update:* I won the "second prize":http://www.appcelerant.com/titanium-mobile-developer-contest-results.html in the Appcelerator Titanium Mobile Developer contest. Thanks to everyone who voted for me. You guys are awesome!
+
+*Update 2:* The app is now live on the App Store. Get it "here":http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=329502169&amp;mt=8.
+
+*Buzzy*

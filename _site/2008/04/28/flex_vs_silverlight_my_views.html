@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="author" content="Chinmay Garde" />
+	<title>Buzzy And Me: Flex vs Silverlight, My Views</title>
+	<link rel="stylesheet" href="/styles/main.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="/styles/syntax.css" type="text/css" charset="utf-8">	
+	<script src="/scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/scripts/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="main_title">
+			<a href="/">Buzzy And Me</a>
+		</div>
+		<div class="description">
+			My Take On Technology <a href="#"><img src="/assets/rss.png" width="20px" height="20px" alt="RSS"></a>
+		</div>
+
+		
+		<!-- Twitter Widget -->
+		<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 25,
+			  interval: 6000,
+			  width: 'auto',
+			  height: 150,
+			  theme: {
+			    shell: {
+			      background: '#c71b1b',
+			      color: '#fffdd8'
+			    },
+			    tweets: {
+			      background: '#c71b1b',
+			      color: '#fffdd8',
+			      links: '#ff6600'
+			    }
+			  },
+			  features: {
+			    scrollbar: true,
+			    loop: false,
+			    live: false,
+			    hashtags: true,
+			    timestamp: true,
+			    avatars: true,
+			    behavior: 'all'
+			  }
+			}).render().setUser('chinmaygarde').start();
+		</script>
+		<link rel="stylesheet" href="/styles/twitter_widget.css" type="text/css" charset="utf-8">
+		<!-- End Twitter Widget -->
+	</div>
+	
+	<div id="content">
+		<h1>Flex vs Silverlight, My Views<a class="title_home_link" href="/">&laquo; Home</a></h1>
+<p class="postdate">28 April, 2008</p>
+<p>I have been developing on both Flex and Silverlight for some time, and now is as good a time as any to evaluate these two exciting technologies. My goal was to create two similar applications on both Flex and Silverlight. I decided to redo the Stockastica application. It is an online stock trading simulation. Last year it was done using <span class="caps">ASP</span>.<span class="caps">NET</span>. This year I decided to use the new <span class="caps">RIA</span> technologies to dive into the world of Web 2.0.</p>
+<p>A word of caution here. I might be slightly biased towards Flex because I have been developing on Flash for quite some time and I find it simply fantastic. Also, I used the Silverlight 2 Beta 1 to build the application. It is obvious that the final release of the product will address some of the issues described here.</p>
+<p>I will put up screencasts showing both the applications in action soon.</p>
+<p>So, let’s begin…</p>
+<table>
+<tr>
+		<th>Flex</th>
+		<th>Silverlight</th>
+</tr>
+<tr>
+		<td>Almost everyone has Flash Player 9 installed on their systems. So there are no extra downloads required to view these apps.</td>
+		<td>Installing the Silverlight 1.0 plugin was a hassle for me. Then the upgrade to the 2.0 version was not as seamless as I had expected. Almost no one has the Silverlight plugin (But Microsoft has Windows update on their side, one ‘Critical Update’ and the problem is solved  ).</td>
+</tr>
+<tr>
+		<td>Flex has a rich control library ready for use.</td>
+		<td>Even in Beta 1, many controls are missing. Though I expect this problem to be solved by the final release of the product.</td>
+</tr>
+<tr>
+		<td>Supports all image formats.</td>
+		<td>Does not support the <span class="caps">GIF</span> format. Why? Wasted half an hour on this problem before I realized this.</td>
+</tr>
+<tr>
+		<td>Even though AS3 is 10 times faster than AS2 (Ask someone who has worked with particle systems), it still cannot compare with the power of C#. Also, can only program in AS3.</td>
+		<td>Very powerful and easy to use. You can use JavaScript, VB.<span class="caps">NET</span> and C#.</td>
+</tr>
+<tr>
+		<td>Linux support</td>
+		<td>No Linux support. That’s just wrong.</td>
+</tr>
+<tr>
+		<td>Databinding is a snap with the [Bindable] tag</td>
+		<td>Not as straightforward, but can be done anyway. Also, more powerful(in my opinion).</td>
+</tr>
+<tr>
+		<td>Data transfer via the proprietary <span class="caps">AMF</span> using WebORB, Fluorine, etc is faster than traditional web services.</td>
+		<td>No such format for data transfer. Will have to stick to <span class="caps">SOAP</span> and <span class="caps">REST</span> web services(for now).</td>
+</tr>
+<tr>
+		<td>BlazeDS, the real time data push and remoting platform is open source. Very exciting.</td>
+		<td>!! Did not find much information about this.</td>
+</tr>
+<tr>
+		<td>Styling is simplified by using <span class="caps">CSS</span> to style your components. Implementation is not complete though. Stuff like background-repeat is a glaring omission.</td>
+		<td>Have to use <span class="caps">XAML</span> resources. Found this unfamiliar.</td>
+</tr>
+<tr>
+		<td>Debugging is a bit of a hassle.</td>
+		<td>Debugging using Visual Studio is very easy.</td>
+</tr>
+<tr>
+		<td>Accessing web services requires manual creation of ActionScript proxy classes. You can automate this by using FlexTense though.	</td>
+		<td>Accessing web services is very easy. Just add a reference to the WebService in Visual Studio and lookup reference.cs for the good stuff </td>
+</tr>
+<tr>
+		<td>Size of the compiled <span class="caps">SWF</span> file is smaller than that of the uncompressed Silverlight component.</td>
+		<td>Size of the Silverlight component is larger.</td>
+</tr>
+<tr>
+		<td>!!</td>
+		<td>Get 10 GB of hosting space free with Silverlight streaming. Deliver rich media. Awesome.</td>
+</tr>
+<tr>
+		<td>Animation is time based.</td>
+		<td>Animation is frame based. Can’t say which one is better.</td>
+</tr>
+<tr>
+		<td>Cannot be search engine optimized. Bots can’t read the contents of the <span class="caps">SWF</span> file.</td>
+		<td>I am confused about this after the introduction of the .<span class="caps">XAP</span> file.</td>
+</tr>
+<tr>
+		<td>Deploying the final application is a snap because there is only one <span class="caps">SWF</span> file.</td>
+		<td>Lots of individual files to be deployed.</td>
+</tr>
+<tr>
+		<td>Got my copy of Flex Builder 3 Pro for free. If you are a student or faculty member of an educational institution, you can too.</td>
+		<td>Express editions of Visual Studio are available for free.		</td>
+</tr>
+</table>
+<p>Until next time&#8230;<br />
+<strong>Buzzy</strong></p>
+
+<div id="post_navigation_links">
+
+</div>
+
+<div id="comment_controls">
+	<h1>Toggle Comments</h1>
+	<div id="toggle_button"></div>
+</div>
+
+<div id="comments_section">
+</div>
+
+<div id="loading_indicator" style="display:none;">
+	<p>Fetching comments...</p>
+	<img src="/assets/loader.gif" width="220" height="19" alt="loading...">
+</div>
+	</div>
+
+<a href="http://github.com/chinmaygarde"><img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17652172-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics-->
+
+</body>
+
+</html>

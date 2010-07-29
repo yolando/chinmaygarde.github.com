@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="author" content="Chinmay Garde" />
+	<title>Buzzy And Me: Build a Silverlight-Flex Chat Application Using LiveCycle Data Services</title>
+	<link rel="stylesheet" href="/styles/main.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="/styles/syntax.css" type="text/css" charset="utf-8">	
+	<script src="/scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/scripts/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="main_title">
+			<a href="/">Buzzy And Me</a>
+		</div>
+		<div class="description">
+			My Take On Technology <a href="#"><img src="/assets/rss.png" width="20px" height="20px" alt="RSS"></a>
+		</div>
+
+		
+		<!-- Twitter Widget -->
+		<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 25,
+			  interval: 6000,
+			  width: 'auto',
+			  height: 150,
+			  theme: {
+			    shell: {
+			      background: '#c71b1b',
+			      color: '#fffdd8'
+			    },
+			    tweets: {
+			      background: '#c71b1b',
+			      color: '#fffdd8',
+			      links: '#ff6600'
+			    }
+			  },
+			  features: {
+			    scrollbar: true,
+			    loop: false,
+			    live: false,
+			    hashtags: true,
+			    timestamp: true,
+			    avatars: true,
+			    behavior: 'all'
+			  }
+			}).render().setUser('chinmaygarde').start();
+		</script>
+		<link rel="stylesheet" href="/styles/twitter_widget.css" type="text/css" charset="utf-8">
+		<!-- End Twitter Widget -->
+	</div>
+	
+	<div id="content">
+		<h1>Build a Silverlight-Flex Chat Application Using LiveCycle Data Services<a class="title_home_link" href="/">&laquo; Home</a></h1>
+<p class="postdate">17 October, 2008</p>
+<p>With the recent release of Silverlight 2 RC1 and Flash Player 10, things in the <span class="caps">RIA</span> world have never looked more interesting. I was going over the forums on Silverlight.net and realised that some of the criticism directed towards Silverlight was regarding the lack of support for a binary protocol similar to <span class="caps">AMF</span>, which is supported by the Flash Player. Data transfer using <span class="caps">AMF</span> is definitely faster than the more verbose <span class="caps">XML</span>.</p>
+<p>I am sure that better ways of data transfer with Silverlight will emerge soon, but currently, our options are limited. I tried a few examples using sockets but it seemed like too much work, especially when you are used to <span class="caps">RPC</span> using the RemoteObject tag in Flex :-)</p>
+<p>There is a workaround (more of a hack) to this problem. We could use the <span class="caps">HTML</span> <span class="caps">DOM</span> integration of the Silverlight runtime and Flash Player to pass messages between the two. The Flash application will have no UI elements (in fact, it can be hidden). It only receives the messages and passes the data to the <span class="caps">DOM</span>, which is then sent to the Silverlight application. The JavaScript required for this purpose is not too complicated. This is not an elegant solution but it will have to do for now.</p>
+<p>Though I initially started exploring this approach only to call ColdFusion CFC’s from a Silverlight application without resorting to <span class="caps">XML</span> Web Services, I quickly realised that the same approach could be used to build a simple Chat application using the Messaging features of <span class="caps">LCDS</span>.<br />
+So here is a quick tutorial on creating a Flex Silverlight Chat application using LiveCycle. I am using the version of LiveCycle that is integrated into the ColdFusion 8 server.</p>
+<p><strong>Step 1: Configuring LiveCycle Messaging Endpoints</strong><br />
+The first step is to configure a “destination” in the messaging-config.xml file that resides in the <span class="caps">WEB</span>-<span class="caps">INF</span>/flex folder of your web root.</p>
+<p>Give the destination an appropriate ID, and then specify the appropriate adapter. In the default installation of <span class="caps">LCDS</span> on ColdFusion 8, the default adapter is “cfgateway”. We want to use the “actionscript” adapter, so it has to be explicitly mentioned.</p>
+<div class="highlight"><pre><code class="xml"><span class="nt">&lt;adapter</span> <span class="na">ref=</span><span class="s">&quot;actionscript&quot;</span><span class="nt">/&gt;</span>
+</code></pre>
+</div><p>The second step is optional. Switch the “allow-subtopics” server property to true. This way, our chat application can listen to and send messages on multiple topics. For further information regarding the server properties and other security information, refer to the LiveCycle LiveDocs.</p>
+<div class="highlight"><pre><code class="xml"><span class="nt">&lt;properties&gt;</span>
+      <span class="nt">&lt;server&gt;</span>
+        <span class="nt">&lt;allow-subtopics&gt;</span>true<span class="nt">&lt;/allow-subtopics&gt;</span>
+      <span class="nt">&lt;/server&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre>
+</div><p>The next step is to specify the channel over which we want to transfer data. The “java-rtmp” channel enables messages to be transferred in real time. However, it uses a non standard port for communication which may cause issues with Firewalls. So, as a backup, we specify another channel “java-polling-amf” which uses polling to check if data needs to be transferred. Be sure to check that these channel definitions are uncommented in the services-config.xml file. You can adjust the settings of these endpoints too, but the defaults should work fine for our purposes.</p>
+<div class="highlight"><pre><code class="xml">  <span class="nt">&lt;destination</span> <span class="na">id=</span><span class="s">&quot;chat&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;adapter</span> <span class="na">ref=</span><span class="s">&quot;actionscript&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;properties&gt;</span>
+      <span class="nt">&lt;server&gt;</span>
+        <span class="nt">&lt;allow-subtopics&gt;</span>true<span class="nt">&lt;/allow-subtopics&gt;</span>
+      <span class="nt">&lt;/server&gt;</span>
+    <span class="nt">&lt;/properties&gt;</span>
+    <span class="nt">&lt;channels&gt;</span>
+      <span class="nt">&lt;channel</span> <span class="na">ref=</span><span class="s">&quot;java-rtmp&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;channel</span> <span class="na">ref=</span><span class="s">&quot;java-polling-amf&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/channels&gt;</span>
+  <span class="nt">&lt;/destination&gt;</span>
+</code></pre>
+</div><p>And thats it, save both the services-config.xml and messaging-config.xml file and restart your server.</p>
+<p><strong>Step 2: Building the Flex Application</strong><br />
+The next step is to build the Flex application that will actually handle the data transfer between the server and the <span class="caps">HTML</span> <span class="caps">DOM</span>. This application will have no UI elements. You can specify a really tiny size.<br />
+Create a Flex ColdFusion 8 project that uses LiveCycle Data Services instead of Flash Remoting. Now instantiate the Producer and the Consumer objects in <span class="caps">MXML</span>.</p>
+<div class="highlight"><pre><code class="xml"><span class="nt">&lt;mx:Producer</span> <span class="na">id=</span><span class="s">&quot;producer&quot;</span> <span class="na">destination=</span><span class="s">&quot;chat&quot;</span> <span class="na">subtopic=</span><span class="s">&quot;buzzy&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;mx:Consumer</span> <span class="na">id=</span><span class="s">&quot;consumer&quot;</span> <span class="na">destination=</span><span class="s">&quot;chat&quot;</span> <span class="na">subtopic=</span><span class="s">&quot;buzzy&quot;</span> <span class="na">message=</span><span class="s">&quot;gotMessage(event)&quot;</span> <span class="nt">/&gt;</span>
+</code></pre>
+</div><p>The destination property of these objects is the one specified in the messaging-config.xml. Since subtopics are allowed, specify a subtopic of your choice. This feature will come in handy when you are building a more full featured chat application.<br />
+Add a “message” event handler to your consumer. This event handler will call an external JavaScript method, passing it the message that the consumer just received.</p>
+<div class="highlight"><pre><code class="java"><span class="kd">private</span> <span class="n">function</span> <span class="nf">gotMessage</span><span class="o">(</span><span class="nl">e:</span><span class="n">MessageEvent</span><span class="o">):</span><span class="kt">void</span>
+<span class="o">{</span>
+    <span class="n">flash</span><span class="o">.</span><span class="na">external</span><span class="o">.</span><span class="na">ExternalInterface</span><span class="o">.</span><span class="na">call</span><span class="o">(</span><span class="s">&quot;receiveMessage&quot;</span><span class="o">,</span> <span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="na">message</span><span class="o">.</span><span class="na">body</span> <span class="n">as</span> <span class="n">String</span><span class="o">));</span>
+<span class="o">}</span>
+</code></pre>
+</div><p>On the “creationComplete” event of the Application, register a callback method. This ActionScript method will be called when the appropriate JavaScript method is called in the <span class="caps">HTML</span> page. This ActionScript method receives one argument with which it constructs an AsyncMessage and sends it using the Producer.</p>
+<div class="highlight"><pre><code class="java"><span class="kd">private</span> <span class="n">function</span> <span class="nf">init</span><span class="o">(</span><span class="nl">e:</span><span class="n">FlexEvent</span><span class="o">):</span><span class="kt">void</span>
+<span class="o">{</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="na">subscribe</span><span class="o">();</span>
+        <span class="n">flash</span><span class="o">.</span><span class="na">external</span><span class="o">.</span><span class="na">ExternalInterface</span><span class="o">.</span><span class="na">addCallback</span><span class="o">(</span><span class="s">&quot;sendMessage&quot;</span><span class="o">,</span> <span class="n">sendMessage</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="kd">private</span> <span class="n">function</span> <span class="nf">sendMessage</span><span class="o">(</span><span class="nl">str:</span><span class="n">String</span><span class="o">):</span><span class="kt">void</span>
+<span class="o">{</span>
+        <span class="n">var</span> <span class="nl">message:</span><span class="n">AsyncMessage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AsyncMessage</span><span class="o">();</span>
+        <span class="n">message</span><span class="o">.</span><span class="na">body</span> <span class="o">=</span> <span class="n">str</span><span class="o">;</span>
+        <span class="n">producer</span><span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre>
+</div><p>The complete <span class="caps">MXML</span> code is given below:</p>
+<div class="highlight"><pre><code class="xml"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;mx:Application</span> <span class="na">xmlns:mx=</span><span class="s">&quot;http://www.adobe.com/2006/mxml&quot;</span> <span class="na">creationComplete=</span><span class="s">&quot;init(event)&quot;</span> <span class="na">layout=</span><span class="s">&quot;absolute&quot;</span> <span class="na">height=</span><span class="s">&quot;5&quot;</span> <span class="na">width=</span><span class="s">&quot;5&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;mx:Script&gt;</span>
+</code></pre>
+</div><div class="highlight"><pre><code class="java"><span class="o">&lt;![</span><span class="n">CDATA</span><span class="o">[</span>
+<span class="kn">import</span> <span class="nn">mx.messaging.events.MessageFaultEvent</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">mx.controls.Alert</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">mx.messaging.events.MessageEvent</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">mx.messaging.messages.AsyncMessage</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">mx.events.FlexEvent</span><span class="o">;</span>
+<span class="kd">private</span> <span class="n">function</span> <span class="nf">init</span><span class="o">(</span><span class="nl">e:</span><span class="n">FlexEvent</span><span class="o">):</span><span class="kt">void</span>
+<span class="o">{</span>
+	<span class="n">consumer</span><span class="o">.</span><span class="na">subscribe</span><span class="o">();</span>
+	<span class="n">flash</span><span class="o">.</span><span class="na">external</span><span class="o">.</span><span class="na">ExternalInterface</span><span class="o">.</span><span class="na">addCallback</span><span class="o">(</span><span class="s">&quot;sendMessage&quot;</span><span class="o">,</span> <span class="n">sendMessage</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="kd">private</span> <span class="n">function</span> <span class="nf">sendMessage</span><span class="o">(</span><span class="nl">str:</span><span class="n">String</span><span class="o">):</span><span class="kt">void</span>
+<span class="o">{</span>
+	<span class="n">var</span> <span class="nl">message:</span><span class="n">AsyncMessage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AsyncMessage</span><span class="o">();</span>
+	<span class="n">message</span><span class="o">.</span><span class="na">body</span> <span class="o">=</span> <span class="n">str</span><span class="o">;</span>
+	<span class="n">producer</span><span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="kd">private</span> <span class="n">function</span> <span class="nf">gotMessage</span><span class="o">(</span><span class="nl">e:</span><span class="n">MessageEvent</span><span class="o">):</span><span class="kt">void</span>
+<span class="o">{</span>
+	<span class="n">flash</span><span class="o">.</span><span class="na">external</span><span class="o">.</span><span class="na">ExternalInterface</span><span class="o">.</span><span class="na">call</span><span class="o">(</span><span class="s">&quot;receiveMessage&quot;</span><span class="o">,</span> <span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="na">message</span><span class="o">.</span><span class="na">body</span> <span class="n">as</span> <span class="n">String</span><span class="o">));</span>
+<span class="o">}</span>		
+<span class="o">]]&gt;</span>
+</code></pre>
+</div><div class="highlight"><pre><code class="xml">	<span class="nt">&lt;/mx:Script&gt;</span>
+	<span class="nt">&lt;mx:Producer</span> <span class="na">id=</span><span class="s">&quot;producer&quot;</span> <span class="na">destination=</span><span class="s">&quot;chat&quot;</span> <span class="na">subtopic=</span><span class="s">&quot;buzzy&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;mx:Consumer</span> <span class="na">id=</span><span class="s">&quot;consumer&quot;</span> <span class="na">destination=</span><span class="s">&quot;chat&quot;</span> <span class="na">subtopic=</span><span class="s">&quot;buzzy&quot;</span> <span class="na">message=</span><span class="s">&quot;gotMessage(event)&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/mx:Application&gt;</span>
+</code></pre>
+</div><p><strong>Step 3: Building the Silverlight Application</strong><br />
+We are finally done with the Flex application, moving on to the Silverlight application itself. All the UI elements of the application have to be created here. The details are really up to you, but the basic elements of the UI will be a TextBox which will act as a message area and another TextBox which will act as a message input area. I quickly drew the UI in Blend. This is what I ended up with:</p>
+<div class="highlight"><pre><code class="xml"><span class="nt">&lt;UserControl</span> <span class="na">x:Class=</span><span class="s">&quot;FlexSilverlightChat.Page&quot;</span>
+<span class="na">xmlns=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>
+<span class="na">xmlns:x=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>
+<span class="na">Width=</span><span class="s">&quot;800&quot;</span> <span class="na">Height=</span><span class="s">&quot;600&quot;</span>
+<span class="na">Background=</span><span class="s">&quot;#FF1E8AB6&quot;</span> <span class="na">Foreground=</span><span class="s">&quot;#FF1E8AB6&quot;</span>
+<span class="na">xmlns:d=</span><span class="s">&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span>
+<span class="na">xmlns:mc=</span><span class="s">&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</span>
+<span class="na">mc:Ignorable=</span><span class="s">&quot;d&quot;</span><span class="nt">&gt;</span>
+	
+<span class="nt">&lt;Grid</span> <span class="na">x:Name=</span><span class="s">&quot;LayoutRoot&quot;</span>
+		<span class="na">Background=</span><span class="s">&quot;#FF1372B0&quot;</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;Rectangle</span> <span class="na">Height=</span><span class="s">&quot;55.294&quot;</span>
+		<span class="na">Margin=</span><span class="s">&quot;8.412,0,121.941,7.882&quot;</span>
+		<span class="na">VerticalAlignment=</span><span class="s">&quot;Bottom&quot;</span>
+		<span class="na">Fill=</span><span class="s">&quot;#FFD8D8D8&quot;</span>
+		<span class="na">Stroke=</span><span class="s">&quot;#FF000000&quot;</span>
+		<span class="na">StrokeThickness=</span><span class="s">&quot;4&quot;</span>
+		<span class="na">d:LayoutOverrides=</span><span class="s">&quot;Height&quot;</span>
+		<span class="na">d:IsLocked=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;Button</span> <span class="na">Click=</span><span class="s">&quot;Button_Click&quot;</span>
+		<span class="na">Height=</span><span class="s">&quot;55&quot;</span>
+		<span class="na">HorizontalAlignment=</span><span class="s">&quot;Right&quot;</span>
+		<span class="na">Margin=</span><span class="s">&quot;0,0,8.001,7.882&quot;</span>
+		<span class="na">VerticalAlignment=</span><span class="s">&quot;Bottom&quot;</span>
+		<span class="na">Width=</span><span class="s">&quot;109.586&quot;</span>
+		<span class="na">Content=</span><span class="s">&quot;Send&quot;</span>
+		<span class="na">d:LayoutOverrides=</span><span class="s">&quot;Width&quot;</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;Rectangle</span> <span class="na">Margin=</span><span class="s">&quot;8.001,7.882,8.001,66.94&quot;</span>
+		<span class="na">Fill=</span><span class="s">&quot;#FFD8D8D8&quot;</span>
+		<span class="na">Stroke=</span><span class="s">&quot;#FF000000&quot;</span>
+		<span class="na">StrokeThickness=</span><span class="s">&quot;4&quot;</span>
+		<span class="na">Opacity=</span><span class="s">&quot;0.43&quot;</span>
+		<span class="na">d:IsLocked=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;TextBox</span> <span class="na">Margin=</span><span class="s">&quot;18.823,18.591,21.884,77.586&quot;</span>
+		<span class="na">x:Name=</span><span class="s">&quot;messageArea&quot;</span>
+		<span class="na">Opacity=</span><span class="s">&quot;1&quot;</span>
+		<span class="na">Background=</span><span class="s">&quot;{x:Null}&quot;</span>
+		<span class="na">Text=</span><span class="s">&quot;&quot;</span>
+		<span class="na">TextWrapping=</span><span class="s">&quot;Wrap&quot;</span>
+		<span class="na">IsReadOnly=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;TextBox</span> <span class="na">Height=</span><span class="s">&quot;34.649&quot;</span>
+		<span class="na">Margin=</span><span class="s">&quot;18.969,0,135.295,17.114&quot;</span>
+		<span class="na">x:Name=</span><span class="s">&quot;inputText&quot;</span>
+		<span class="na">VerticalAlignment=</span><span class="s">&quot;Bottom&quot;</span>
+		<span class="na">Background=</span><span class="s">&quot;{x:Null}&quot;</span>
+		<span class="na">Text=</span><span class="s">&quot;&quot;</span>
+		<span class="na">TextWrapping=</span><span class="s">&quot;Wrap&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;/Grid&gt;</span>
+<span class="nt">&lt;/UserControl&gt;</span>
+</code></pre>
+</div><p>The Send button is wired to an event handler which calls a JavaScript method called “sendMessage” which in turn calls the ActionScript method (also named “sendMessage”) that sends the message using the Producer. It is invoked as follows:</p>
+<div class="highlight"><pre><code class="csharp"><span class="k">void</span> <span class="nf">Button_Click</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">RoutedEventArgs</span> <span class="n">e</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">HtmlPage</span><span class="p">.</span><span class="n">Window</span><span class="p">.</span><span class="n">Invoke</span><span class="p">(</span><span class="s">&quot;sendMessage&quot;</span><span class="p">,</span> <span class="n">inputText</span><span class="p">.</span><span class="n">Text</span><span class="p">);</span>
+	<span class="n">inputText</span><span class="p">.</span><span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div><p>Invoking Javascript methods from C# is simple enough but the reverse is not as easy as registering a callback method, as in the case of ActionScript.</p>
+<p>First, the “Page” class has to be marked as a “ScriptableType” and all the methods that have to be called from JavaScript must be marked as “ScriptableMember”</p>
+<p>Then, register an event handler that responds to the “Loaded” event. The “Page” class which is marked as a “ScriptableType” must be registered as a Scriptable Object.</p>
+<div class="highlight"><pre><code class="csharp"><span class="k">void</span> <span class="nf">Page_Loaded</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">RoutedEventArgs</span> <span class="n">e</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">HtmlPage</span><span class="p">.</span><span class="n">RegisterScriptableObject</span><span class="p">(</span><span class="s">&quot;Page&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div><p>The complete C# code is given below:</p>
+<div class="highlight"><pre><code class="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Net</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows.Controls</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows.Documents</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows.Input</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows.Media</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows.Media.Animation</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows.Shapes</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows.Browser</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">FlexSilverlightChat</span>
+<span class="p">{</span>
+<span class="na">    [ScriptableType]</span>
+    <span class="k">public</span> <span class="k">partial</span> <span class="k">class</span> <span class="nc">Page</span> <span class="p">:</span> <span class="n">UserControl</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="nf">Page</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">InitializeComponent</span><span class="p">();</span>
+            <span class="n">Loaded</span> <span class="p">+=</span> <span class="k">new</span> <span class="n">RoutedEventHandler</span><span class="p">(</span><span class="n">Page_Loaded</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">void</span> <span class="nf">Page_Loaded</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">RoutedEventArgs</span> <span class="n">e</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">HtmlPage</span><span class="p">.</span><span class="n">RegisterScriptableObject</span><span class="p">(</span><span class="s">&quot;Page&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">void</span> <span class="nf">Button_Click</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">RoutedEventArgs</span> <span class="n">e</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">HtmlPage</span><span class="p">.</span><span class="n">Window</span><span class="p">.</span><span class="n">Invoke</span><span class="p">(</span><span class="s">&quot;sendMessage&quot;</span><span class="p">,</span> <span class="n">inputText</span><span class="p">.</span><span class="n">Text</span><span class="p">);</span>
+            <span class="n">inputText</span><span class="p">.</span><span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="na">        [ScriptableMember]</span>
+        <span class="k">public</span> <span class="k">void</span> <span class="nf">gotMessage</span><span class="p">(</span><span class="n">String</span> <span class="n">message</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">messageArea</span><span class="p">.</span><span class="n">Text</span> <span class="p">=</span> <span class="s">&quot;Message: &quot;</span> <span class="p">+</span> <span class="n">message</span> <span class="p">+</span> <span class="s">&quot;\n&quot;</span> <span class="p">+</span> <span class="n">messageArea</span><span class="p">.</span><span class="n">Text</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div><p>We are now in the home stretch. Generate the release builds of the Flex application using Flex Builder and the Silverlight TestPage using Visual Studio. You will now have the Silverlight and Flex applications residing on two separate pages.</p>
+<p>Copy the appropriate <span class="caps">HTML</span> code fragments from both pages onto a single <span class="caps">HTML</span> Page.<br />
+Now it’s time to write the JavaScript that will wire the ActionScript methods in the Flex application with the C# methods in the Silverlight application.</p>
+<p>Both methods are fairly trivial and self explanatory.</p>
+<p></notextile></p>
+<p>And that’s it. Copy the assets to the appropriate folder under the web root and run it. You will see that the messages you type into the text input at the bottom appear in the message area above. In reality, the message is being transferred from the Silverlight client to the <span class="caps">HTML</span> <span class="caps">DOM</span> which in turn passes it to the Flex application whose Producer sends the message. As the Consumer in the Flex application receives the message, it sends it back to the <span class="caps">DOM</span> from which it is passed to the Silverlight client.</p>
+<p>Open the same application in a couple of other windows and see if the messages sent from one instance of the application are seen in the other.</p>
+<p>Here is a quick video I made of the applications in action:<br />
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/j8G7sGiCUPc&hl=en&fs=1&rel=0&color1=0x3a3a3a&color2=0x999999"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/j8G7sGiCUPc&hl=en&fs=1&rel=0&color1=0x3a3a3a&color2=0x999999" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object></p>
+<p><strong>Buzzy</strong></p>
+
+<div id="post_navigation_links">
+
+</div>
+
+<div id="comment_controls">
+	<h1>Toggle Comments</h1>
+	<div id="toggle_button"></div>
+</div>
+
+<div id="comments_section">
+</div>
+
+<div id="loading_indicator" style="display:none;">
+	<p>Fetching comments...</p>
+	<img src="/assets/loader.gif" width="220" height="19" alt="loading...">
+</div>
+	</div>
+
+<a href="http://github.com/chinmaygarde"><img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17652172-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics-->
+
+</body>
+
+</html>

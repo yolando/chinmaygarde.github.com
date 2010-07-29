@@ -1,8 +1,13 @@
-<html>
-  <head>
-    <title>Buzzy And Me</title>
-  </head>
-  <body>
-    <h1>Buzzy And Me</h1>
-  </body>
-</html>
+---
+layout: default
+title: Blog
+---
+
+<div id="home">
+  <h1>All Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo;<br /><a href="{{ post.url }}">{{ post.title }}</a></li><br />
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,19 @@
+---
+layout: post
+title: Stockastica Version 1.0
+postdate: 01 May, 2008
+---
+
+Things couldn't have gotten better.
+
+Almost an year back, Buzzy had developed this App Stockastica, a virtual stock market game using Visual Studio, retrieving live data from Nasdaq.com. It retrieved the Quotes of 20 companies, and displayed them wherein, users could buy and sell stocks using virtual bounty. At the end of the day, the person with the biggest net assets won $50 real money from the organizers! The UI was simplistic, and minimalistic. But then thats what you can do when you are on a self motivated project with a deadline of 4 days, and you have no idea whether the idea is feasible.
+
+That was then. Thanks to "Raghu":http://raghuonflex.wordpress.com, Technical Evangelist, Adobe Systems, Bangalore, who came to our college and held a "2-day workshop on Flex":http://techtatva07.wordpress.com/2007/09/02/adobe-flex-builder-workshop/, we got a bit into Flex. And then, we decided, we would go for developing the App in Flex this year. A few months later Flex 3 was released, and we got a free copy of Flex 3 for students, and started out building the App in Flex 3.
+
+And here it is- "Version 1.0 of Stockastica":http://www.screencast.com/t/pTCBRrGH
+
+_[ The Screencast is made using Jing, which is a recent discovery, and which is awesome too!]_
+
+_[ P.S. We ARE still working to better the <em>Plain Vanilla look</em>, getting more and more confused, every time we tweak it :( ]_
+
+*Neyawn*

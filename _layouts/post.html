@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<h1>{{ page.title }}<a class="title_home_link" href="/">&laquo; Home</a></h1>
+<p class="postdate">{{ page.postdate }}</p>
+{{ content }}
+
+<div id="post_navigation_links">
+
+</div>
+
+<div id="comment_controls">
+	<h1>Toggle Comments</h1>
+	<div id="toggle_button"></div>
+</div>
+
+<div id="comments_section">
+</div>
+
+<div id="loading_indicator" style="display:none;">
+	<p>Fetching comments...</p>
+	<img src="/assets/loader.gif" width="220" height="19" alt="loading...">
+</div>

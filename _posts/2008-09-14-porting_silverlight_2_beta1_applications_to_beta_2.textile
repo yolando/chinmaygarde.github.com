@@ -1,0 +1,17 @@
+---
+layout: post
+title: Porting Silverlight 2 Beta 1 Application to Beta 2
+postdate: 14 September, 2008
+---
+
+About 5 months ago, I made a Flex/AIR application called Stockastica. It was a virtual stock trading simulation. Subsequently, I ported it to Silverlight 2 Beta 1. The first beta was just released and I was eager to see what I could do with it. It wasn't a very complicated app. Only basic web services were used. I made the app and forgot about it.
+
+Today, I decided to port the app to beta 2. It is quite daunting when you start out. But like all things, you only need to find the right resources to help you get started. Probably the most helpful one was a post on "/dev/arthur":http://devarthur.blogspot.com/2008/06/moving-silverlight-2-beta-1.html. It solved almost all my problems.
+
+If you are hosting the app on IIS7, don't forget to add a .xap extension with a mime type of <em>application/x-silverlight</em>. Porting apps that use sockets was a bit troublesome. A detailed description of the changes between beta 1 and 2 is available "here":http://msdn.microsoft.com/en-us/library/cc645049(VS.95).aspx.
+
+*A screencast of the ported application...*
+<object width="400" height="250"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=1725331&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=ff9933&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=1725331&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=ff9933&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="250"></embed></object>
+
+Regards,
+*Buzzy*

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="author" content="Chinmay Garde" />
+	<title>Buzzy And Me: {{ page.title }}</title>
+	<link rel="stylesheet" href="/styles/main.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="/styles/syntax.css" type="text/css" charset="utf-8">	
+	<script src="/scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/scripts/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="main_title">
+			<a href="/">Buzzy And Me</a>
+		</div>
+		<div class="description">
+			My Take On Technology <a href="#"><img src="/assets/rss.png" width="20px" height="20px" alt="RSS"></a>
+		</div>
+
+		
+		<!-- Twitter Widget -->
+		<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 25,
+			  interval: 6000,
+			  width: 'auto',
+			  height: 150,
+			  theme: {
+			    shell: {
+			      background: '#c71b1b',
+			      color: '#fffdd8'
+			    },
+			    tweets: {
+			      background: '#c71b1b',
+			      color: '#fffdd8',
+			      links: '#ff6600'
+			    }
+			  },
+			  features: {
+			    scrollbar: true,
+			    loop: false,
+			    live: false,
+			    hashtags: true,
+			    timestamp: true,
+			    avatars: true,
+			    behavior: 'all'
+			  }
+			}).render().setUser('chinmaygarde').start();
+		</script>
+		<link rel="stylesheet" href="/styles/twitter_widget.css" type="text/css" charset="utf-8">
+		<!-- End Twitter Widget -->
+	</div>
+	
+	<div id="content">
+		{{ content }}
+	</div>
+
+<a href="http://github.com/chinmaygarde"><img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17652172-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics-->
+
+</body>
+
+</html>

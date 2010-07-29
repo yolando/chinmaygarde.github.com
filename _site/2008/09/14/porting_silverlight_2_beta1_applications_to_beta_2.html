@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="author" content="Chinmay Garde" />
+	<title>Buzzy And Me: Porting Silverlight 2 Beta 1 Application to Beta 2</title>
+	<link rel="stylesheet" href="/styles/main.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="/styles/syntax.css" type="text/css" charset="utf-8">	
+	<script src="/scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/scripts/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="main_title">
+			<a href="/">Buzzy And Me</a>
+		</div>
+		<div class="description">
+			My Take On Technology <a href="#"><img src="/assets/rss.png" width="20px" height="20px" alt="RSS"></a>
+		</div>
+
+		
+		<!-- Twitter Widget -->
+		<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 25,
+			  interval: 6000,
+			  width: 'auto',
+			  height: 150,
+			  theme: {
+			    shell: {
+			      background: '#c71b1b',
+			      color: '#fffdd8'
+			    },
+			    tweets: {
+			      background: '#c71b1b',
+			      color: '#fffdd8',
+			      links: '#ff6600'
+			    }
+			  },
+			  features: {
+			    scrollbar: true,
+			    loop: false,
+			    live: false,
+			    hashtags: true,
+			    timestamp: true,
+			    avatars: true,
+			    behavior: 'all'
+			  }
+			}).render().setUser('chinmaygarde').start();
+		</script>
+		<link rel="stylesheet" href="/styles/twitter_widget.css" type="text/css" charset="utf-8">
+		<!-- End Twitter Widget -->
+	</div>
+	
+	<div id="content">
+		<h1>Porting Silverlight 2 Beta 1 Application to Beta 2<a class="title_home_link" href="/">&laquo; Home</a></h1>
+<p class="postdate">14 September, 2008</p>
+<p>About 5 months ago, I made a Flex/<span class="caps">AIR</span> application called Stockastica. It was a virtual stock trading simulation. Subsequently, I ported it to Silverlight 2 Beta 1. The first beta was just released and I was eager to see what I could do with it. It wasn&#8217;t a very complicated app. Only basic web services were used. I made the app and forgot about it.</p>
+<p>Today, I decided to port the app to beta 2. It is quite daunting when you start out. But like all things, you only need to find the right resources to help you get started. Probably the most helpful one was a post on <a href="http://devarthur.blogspot.com/2008/06/moving-silverlight-2-beta-1.html">/dev/arthur</a>. It solved almost all my problems.</p>
+<p>If you are hosting the app on IIS7, don&#8217;t forget to add a .xap extension with a mime type of <em>application/x-silverlight</em>. Porting apps that use sockets was a bit troublesome. A detailed description of the changes between beta 1 and 2 is available <a href="http://msdn.microsoft.com/en-us/library/cc645049(VS.95).aspx">here</a>.</p>
+<p><strong>A screencast of the ported application&#8230;</strong><br />
+<object width="400" height="250"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=1725331&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=ff9933&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=1725331&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=ff9933&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="250"></embed></object></p>
+<p>Regards,<br />
+<strong>Buzzy</strong></p>
+
+<div id="post_navigation_links">
+
+</div>
+
+<div id="comment_controls">
+	<h1>Toggle Comments</h1>
+	<div id="toggle_button"></div>
+</div>
+
+<div id="comments_section">
+</div>
+
+<div id="loading_indicator" style="display:none;">
+	<p>Fetching comments...</p>
+	<img src="/assets/loader.gif" width="220" height="19" alt="loading...">
+</div>
+	</div>
+
+<a href="http://github.com/chinmaygarde"><img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17652172-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics-->
+
+</body>
+
+</html>

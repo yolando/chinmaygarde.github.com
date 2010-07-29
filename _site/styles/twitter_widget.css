@@ -1,0 +1,32 @@
+.twtr-bd {
+	border-style: solid;
+	border-color: #FFFDD8;
+	border-width: 1px;
+	margin-top: 30px;
+}
+.twtr-hd, .twtr-ft {
+	display: none;
+}
+.twtr-tweet {
+	font-family: arial;
+	font-size: 14px;
+}
+.twtr-tweet-text {
+	margin-left: 0px !important;
+}
+.twtr-avatar {
+	float: right;
+}
+.twtr-img img {
+	width: 40px;
+	height: 40px;
+	-moz-border-radius: 	5px;
+    -khtml-border-radius: 	5px;
+    -webkit-border-radius:	5px;
+}
+.twtr-timestamp, .twtr-timestamp:hover, .twtr-reply, .twtr-reply:hover {
+	font-size: 12px;
+}
+.twtr-user {
+	display: none !important;
+}

@@ -1,0 +1,288 @@
+---
+layout: post
+title: Build a Silverlight-Flex Chat Application Using LiveCycle Data Services
+postdate: 17 October, 2008
+---
+
+With the recent release of Silverlight 2 RC1 and Flash Player 10, things in the RIA world have never looked more interesting. I was going over the forums on Silverlight.net and realised that some of the criticism directed towards Silverlight was regarding the lack of support for a binary protocol similar to AMF, which is supported by the Flash Player. Data transfer using AMF is definitely faster than the more verbose XML.
+
+I am sure that better ways of data transfer with Silverlight will emerge soon, but currently, our options are limited. I tried a few examples using sockets but it seemed like too much work, especially when you are used to RPC using the RemoteObject tag in Flex :-)
+
+There is a workaround (more of a hack) to this problem. We could use the HTML DOM integration of the Silverlight runtime and Flash Player to pass messages between the two. The Flash application will have no UI elements (in fact, it can be hidden). It only receives the messages and passes the data to the DOM, which is then sent to the Silverlight application. The JavaScript required for this purpose is not too complicated. This is not an elegant solution but it will have to do for now.
+
+Though I initially started exploring this approach only to call ColdFusion CFC’s from a Silverlight application without resorting to XML Web Services, I quickly realised that the same approach could be used to build a simple Chat application using the Messaging features of LCDS.
+So here is a quick tutorial on creating a Flex Silverlight Chat application using LiveCycle. I am using the version of LiveCycle that is integrated into the ColdFusion 8 server.
+
+
+
+*Step 1: Configuring LiveCycle Messaging Endpoints*
+The first step is to configure a “destination” in the messaging-config.xml file that resides in the WEB-INF/flex folder of your web root.
+
+Give the destination an appropriate ID, and then specify the appropriate adapter. In the default installation of LCDS on ColdFusion 8, the default adapter is “cfgateway”. We want to use the “actionscript” adapter, so it has to be explicitly mentioned.
+
+{% highlight xml %}
+<adapter ref="actionscript"/>
+{% endhighlight %}
+
+The second step is optional. Switch the “allow-subtopics” server property to true. This way, our chat application can listen to and send messages on multiple topics. For further information regarding the server properties and other security information, refer to the LiveCycle LiveDocs.
+
+{% highlight xml %}
+<properties>
+      <server>
+        <allow-subtopics>true</allow-subtopics>
+      </server>
+</properties>
+{% endhighlight %}
+
+The next step is to specify the channel over which we want to transfer data. The “java-rtmp” channel enables messages to be transferred in real time. However, it uses a non standard port for communication which may cause issues with Firewalls. So, as a backup, we specify another channel “java-polling-amf” which uses polling to check if data needs to be transferred. Be sure to check that these channel definitions are uncommented in the services-config.xml file. You can adjust the settings of these endpoints too, but the defaults should work fine for our purposes.
+
+{% highlight xml %}
+  <destination id="chat">
+    <adapter ref="actionscript"/>
+    <properties>
+      <server>
+        <allow-subtopics>true</allow-subtopics>
+      </server>
+    </properties>
+    <channels>
+      <channel ref="java-rtmp"/>
+      <channel ref="java-polling-amf"/>
+    </channels>
+  </destination>
+{% endhighlight %}
+
+And thats it, save both the services-config.xml and messaging-config.xml file and restart your server.
+
+
+
+*Step 2: Building the Flex Application*
+The next step is to build the Flex application that will actually handle the data transfer between the server and the HTML DOM. This application will have no UI elements. You can specify a really tiny size.
+Create a Flex ColdFusion 8 project that uses LiveCycle Data Services instead of Flash Remoting. Now instantiate the Producer and the Consumer objects in MXML. 
+
+{% highlight xml %}
+<mx:Producer id="producer" destination="chat" subtopic="buzzy" />
+<mx:Consumer id="consumer" destination="chat" subtopic="buzzy" message="gotMessage(event)" />
+{% endhighlight %}
+
+The destination property of these objects is the one specified in the messaging-config.xml. Since subtopics are allowed, specify a subtopic of your choice. This feature will come in handy when you are building a more full featured chat application.
+Add a “message” event handler to your consumer. This event handler will call an external JavaScript method, passing it the message that the consumer just received.
+
+{% highlight java %}
+private function gotMessage(e:MessageEvent):void
+{
+    flash.external.ExternalInterface.call("receiveMessage", (e.message.body as String));
+}
+{% endhighlight %}
+
+On the “creationComplete” event of the Application, register a callback method. This ActionScript method will be called when the appropriate JavaScript method is called in the HTML page. This ActionScript method receives one argument with which it constructs an AsyncMessage and sends it using the Producer.
+
+{% highlight java %}
+private function init(e:FlexEvent):void
+{
+        consumer.subscribe();
+        flash.external.ExternalInterface.addCallback("sendMessage", sendMessage);
+}
+private function sendMessage(str:String):void
+{
+        var message:AsyncMessage = new AsyncMessage();
+        message.body = str;
+        producer.send(message);
+}
+{% endhighlight %}
+
+The complete MXML code is given below:
+
+{% highlight xml %}
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init(event)" layout="absolute" height="5" width="5">
+	<mx:Script>
+{% endhighlight %}
+{% highlight java %}
+<![CDATA[
+import mx.messaging.events.MessageFaultEvent;
+import mx.controls.Alert;
+import mx.messaging.events.MessageEvent;
+import mx.messaging.messages.AsyncMessage;
+import mx.events.FlexEvent;
+private function init(e:FlexEvent):void
+{
+	consumer.subscribe();
+	flash.external.ExternalInterface.addCallback("sendMessage", sendMessage);
+}
+private function sendMessage(str:String):void
+{
+	var message:AsyncMessage = new AsyncMessage();
+	message.body = str;
+	producer.send(message);
+}
+private function gotMessage(e:MessageEvent):void
+{
+	flash.external.ExternalInterface.call("receiveMessage", (e.message.body as String));
+}		
+]]>
+{% endhighlight %}
+{% highlight xml %}
+	</mx:Script>
+	<mx:Producer id="producer" destination="chat" subtopic="buzzy" />
+	<mx:Consumer id="consumer" destination="chat" subtopic="buzzy" message="gotMessage(event)" />
+</mx:Application>
+{% endhighlight %}
+
+
+
+*Step 3: Building the Silverlight Application*
+We are finally done with the Flex application, moving on to the Silverlight application itself. All the UI elements of the application have to be created here. The details are really up to you, but the basic elements of the UI will be a TextBox which will act as a message area and another TextBox which will act as a message input area. I quickly drew the UI in Blend. This is what I ended up with:
+
+{% highlight xml %}
+<UserControl x:Class="FlexSilverlightChat.Page"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Width="800" Height="600"
+Background="#FF1E8AB6" Foreground="#FF1E8AB6"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+mc:Ignorable="d">
+	
+<Grid x:Name="LayoutRoot"
+		Background="#FF1372B0">
+
+<Rectangle Height="55.294"
+		Margin="8.412,0,121.941,7.882"
+		VerticalAlignment="Bottom"
+		Fill="#FFD8D8D8"
+		Stroke="#FF000000"
+		StrokeThickness="4"
+		d:LayoutOverrides="Height"
+		d:IsLocked="True"/>
+
+<Button Click="Button_Click"
+		Height="55"
+		HorizontalAlignment="Right"
+		Margin="0,0,8.001,7.882"
+		VerticalAlignment="Bottom"
+		Width="109.586"
+		Content="Send"
+		d:LayoutOverrides="Width"/>
+
+<Rectangle Margin="8.001,7.882,8.001,66.94"
+		Fill="#FFD8D8D8"
+		Stroke="#FF000000"
+		StrokeThickness="4"
+		Opacity="0.43"
+		d:IsLocked="True"/>
+
+<TextBox Margin="18.823,18.591,21.884,77.586"
+		x:Name="messageArea"
+		Opacity="1"
+		Background="{x:Null}"
+		Text=""
+		TextWrapping="Wrap"
+		IsReadOnly="True"/>
+
+<TextBox Height="34.649"
+		Margin="18.969,0,135.295,17.114"
+		x:Name="inputText"
+		VerticalAlignment="Bottom"
+		Background="{x:Null}"
+		Text=""
+		TextWrapping="Wrap"/>
+
+    </Grid>
+</UserControl>
+{% endhighlight %}
+
+The Send button is wired to an event handler which calls a JavaScript method called “sendMessage” which in turn calls the ActionScript method (also named “sendMessage”) that sends the message using the Producer. It is invoked as follows:
+
+{% highlight csharp %}
+void Button_Click(object sender, RoutedEventArgs e)
+{
+	HtmlPage.Window.Invoke("sendMessage", inputText.Text);
+	inputText.Text = "";
+}
+{% endhighlight %}
+
+Invoking Javascript methods from C# is simple enough but the reverse is not as easy as registering a callback method, as in the case of ActionScript.
+
+First, the “Page” class has to be marked as a “ScriptableType” and all the methods that have to be called from JavaScript must be marked as “ScriptableMember”
+
+Then, register an event handler that responds to the “Loaded” event. The “Page” class which is marked as a “ScriptableType” must be registered as a Scriptable Object.
+
+{% highlight csharp %}
+void Page_Loaded(object sender, RoutedEventArgs e)
+{
+	HtmlPage.RegisterScriptableObject("Page", this);
+}
+{% endhighlight %}
+
+The complete C# code is given below:
+
+{% highlight csharp %}
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
+using System.Windows.Browser;
+
+namespace FlexSilverlightChat
+{
+    [ScriptableType]
+    public partial class Page : UserControl
+    {
+        public Page()
+        {
+            InitializeComponent();
+            Loaded += new RoutedEventHandler(Page_Loaded);
+        }
+        void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            HtmlPage.RegisterScriptableObject("Page", this);
+        }
+        void Button_Click(object sender, RoutedEventArgs e)
+        {
+            HtmlPage.Window.Invoke("sendMessage", inputText.Text);
+            inputText.Text = "";
+        }
+        [ScriptableMember]
+        public void gotMessage(String message)
+        {
+            messageArea.Text = "Message: " + message + "\n" + messageArea.Text;
+        }
+    }
+}
+{% endhighlight %}
+
+We are now in the home stretch. Generate the release builds of the Flex application using Flex Builder and the Silverlight TestPage using Visual Studio. You will now have the Silverlight and Flex applications residing on two separate pages.
+
+Copy the appropriate HTML code fragments from both pages onto a single HTML Page.
+Now it’s time to write the JavaScript that will wire the ActionScript methods in the Flex application with the C# methods in the Silverlight application.
+
+Both methods are fairly trivial and self explanatory.
+
+{% highlight jscript %}
+<script language="JavaScript" type="text/javascript">
+  	function sendMessage(message)
+	{
+		document['FacelessChat'].sendMessage(message);
+	}
+	function receiveMessage(obj)
+	{
+		document.getElementById('slChat').Content.Page.gotMessage(obj);
+	}
+</script>
+{% endhighlight %}
+
+And that’s it. Copy the assets to the appropriate folder under the web root and run it. You will see that the messages you type into the text input at the bottom appear in the message area above. In reality, the message is being transferred from the Silverlight client to the HTML DOM which in turn passes it to the Flex application whose Producer sends the message. As the Consumer in the Flex application receives the message, it sends it back to the DOM from which it is passed to the Silverlight client. 
+
+Open the same application in a couple of other windows and see if the messages sent from one instance of the application are seen in the other.
+
+Here is a quick video I made of the applications in action:
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/j8G7sGiCUPc&hl=en&fs=1&rel=0&color1=0x3a3a3a&color2=0x999999"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/j8G7sGiCUPc&hl=en&fs=1&rel=0&color1=0x3a3a3a&color2=0x999999" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+
+*Buzzy*

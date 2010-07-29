@@ -1,0 +1,22 @@
+---
+layout: post
+title: Flex Developer's Summit, India
+postdate: 04 September, 2008
+---
+
+!http://farm4.static.flickr.com/3281/2804533499_df7cf0d2ae_o.png!
+
+"Adobe is organizing a developer's meet":http://www.endtoend.in/ete2008/adobe/ria/micro/ on September 10-11, 2008 in Bangalore, India. The _RIA Developer Summit_ is focused on developers. Adobe RIA Developer Summit offers a unique opportunity to designers and developers to gain insights into the design and development of RIAs.
+
+The key features are:
+
+* Hear from eminent personalities like *Ben Forta, Director-Evangelism,* and *Michele Turner, VP-Platform,* on the impact of RIAs.
+* Interact with the Flex team and learn how to get that "killer look" for your application that you always dreamed off.
+* Learn how Adobe Flex dramatically accelerates your projects.
+* What’s more, get Adobe Flex Builder 3 worth around Rs. 12000/- FREE!
+
+For young student developers, this is a terrific opportunity. So go ahead and register at Adobe India's Technical Evangelist's "site":http://raghunathrao.com/announcements/events/StudentRegistrations.html . If you are a  faculty drop Raghu a mail at raghunath.rao at gmail dot com, and he just might personaly call and invite you!
+
+You could also leave me a comment for any furthur information. Cya at the developer's meet.
+
+*Neyawn & Buzzy*
